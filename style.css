@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: "Rock Salt";
+    box-sizing: border-box;
 }
 
 /* General style */
@@ -15,56 +16,202 @@ a {
     text-decoration: none;
 }
 
+/* Acceuil */
+#Acceuil {
+    background-image: url(./img/backbackground.png),url(./img/BackgroundHero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95vh;
+}
 
 /* NAV STYLE */
 
 #nav {
     text-align: center;
-    background-color: #0000007d;
+    background-color: #000000a0;
 
-    padding: 1rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 10vh;
 }
 
 .nav-ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 2%;
-
-    
+    gap: 1%;
     font-size: 1.5rem;
+    
+    width: 100%;
+}
+
+.nav-ul-li {
+    margin-right: 1rem;
 }
 
 .li-a:hover {
     border-bottom: solid #fff 4px;
 }
 
-/* Hero section */
+/* Hero */
 
 #hero {
-    margin: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 85vh;
+}
+
+.hero-title {
+    color: #fff;
+
+    font-size: 5rem;
+    text-decoration: underline 2px #fff;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: row;
+
+    
+}
+
+.hero-buttons > * {
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+
+    border: none;
+    border-radius: 10px;
+}
+
+
+
+/* Description  */
+
+#description {
+    background-image: url(./img/BackgroundDescription.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 5%;
+}
+
+.description-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Shared style */
+.h2-des-title, .description-content > div {
+    background-color: #fdfdfdf2;
+}
+
+/* Description title */
+
+.container-h2-des-title {
+    width: fit-content;
+    margin-bottom: 1rem;
+}
+
+.h2-des-title {
+    color: #000;
+    border-radius: 10px;
+    font-size: 2.5rem;
+    padding: 1rem;
+    padding-top: 5%;
+}
+
+/* Description content */
+
+.description-content {
+    padding-bottom: 5%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 5%;
+    gap: 1%;    
 }
 
-#hero > div {
-    background-color: #fdfdfd97;
+.description-content > div {
+    border-radius: 10px;
+    height: 70vh
+}
 
+.hero-article-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-article-1 > img {
     width: 750px;
 }
 
+/* Article 2 */
 
+.hero-article-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    font-size: 0.5rem; 
+}
 
-.article-2-h2
-{
-    font-size: 2rem;
+.hero-article-2 > *, .hero-article-2 > * > *{
+    font-size: 1.3rem;
+    font-family: "Varela Round";
+}
+
+.article-2-h2 {
+    text-decoration: underline;
+    font-size: 1.5rem;
 }
 
 .article-2-p {
-    font-size: 1rem;
+    margin-bottom: 1rem;
+    
+}
+
+.article-ul {
+    margin-top: 1rem;
+    list-style:inside;
+    line-height: 1.7rem;
+}
+
+.article-li {
+    margin-bottom: 5px;
+}
+
+/* Footer */
+
+#footer {
+    height: 30vh;
+    background-color: #191919; 
+    color: #fff;
+    gap: 2%;
+}
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+}
+
+.contact-title {
+    font-size: 1.7rem;
+}
+
+.contact-list-content {
+   font-family:  "Varela Round";
+   line-height: 2rem;
+   font-size: 1.5rem;
 }
